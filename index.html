@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Azhari's Portofolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav id="desktop-nav">
+      <div class="logo"> Azhari </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a> </li>
+          <li><a href="#about">About</a> </li>
+          <li><a href="#contact">Contact</a> </li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Azhari</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#home" onclick="toggleMenu()">Home</a> </li>
+          <li><a href="#about" onclick="toggleMenu()">About</a> </li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a> </li>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <article id="profile">
+      <aside class="section__pic-container">
+        <img src="./img/male_profile.png" class="profile-pic" alt="Azhari's profile picture" />
+      </aside>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Azhari Dadas</h1>
+        <p class="section__text__p2">University Student</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/cv-azhari.pdf')">
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <ion-icon name="logo-discord" class="icon" alt="My Discord profile"
+            onclick="location.href='https://discordapp.com/users/425784983760928780'"></ion-icon>
+          <ion-icon name="logo-linkedin" class="icon" alt="My LinkedIn profile"
+            onclick="location.href='https://www.linkedin.com/feed/'"></ion-icon>
+        </div>
+      </div>
+    </article>
+
+    <article id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="about-section">
+        <p>Hello! I am a 22-year-old student currently pursuing my education at Bina Nusantara University, Jakarta,
+          Indonesia. I am majoring in Information Systems, a field that combines technology and business to create
+          innovative solutions.
+
+          I have a strong interest in Front End Development. I thoroughly enjoy the process of designing and building
+          intuitive and attractive user interfaces. I believe that good design can make interactions easier and the user
+          experience more enjoyable.
+
+          I hail from Jakarta, a dynamic and energetic city. I feel fortunate to be able to learn and grow in such a
+          diverse and inspiring environment.
+
+          I always strive to learn and develop, both academically and professionally. I believe that with hard work and
+          dedication, I can achieve my goals and make a positive contribution to society.
+
+          Thank you for reading about me. </p>
+      </div>
+    </article>
+
+    <article id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <ion-icon name="mail-outline" class="icon" alt="My Email"
+            onclick="location.href='mailto:ismailadadas@gmail.com'"></ion-icon>
+          <p><a href="mailto:ismailadadas@gmail.com">ismailadadas@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <ion-icon name="call-outline" class="icon" alt="My Mobile Phone Number"
+            onclick="location.href='https://wa.link/x9b0rj'"></ion-icon>
+          <p><a href="https://wa.link/x9b0rj">+62 8129 5187 497</a></p>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <p>Copyright &#169; 2023 Azhari Dadas. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
